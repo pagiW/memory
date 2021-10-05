@@ -1,0 +1,72 @@
+button {
+    opacity: 1;
+    width: 50%;
+    height: 50%;
+    border: none;
+    margin: 0;
+}
+body {
+    background-color: black;
+}
+button:active {
+    opacity: 0.5;
+}
+main {
+    color: white;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+#one {
+    border-bottom: white solid 5px;
+    border-right: white solid 5px;
+    background-color: rgb(129, 10, 10);
+    /* border-top-left-radius: 50%; */
+}
+#two {
+    border-bottom: white solid 5px;
+    border-left: white solid 5px;
+    background-color: rgb(2, 71, 2);
+    /* border-top-right-radius: 50%; */
+}
+#three {
+    border-top: white solid 5px;
+    border-right: white solid 5px;
+    background-color: rgb(3, 3, 112);
+    /* border-bottom-left-radius: 50%; */
+}
+#four {
+    border-top: white solid 5px;
+    border-left: white solid 5px;
+    background-color: rgb(109, 109, 4);
+    /* border-bottom-right-radius: 50%; */
+}
+.ani {
+    animation: light 250ms;
+}
+
+.path {
+    clip-path: circle(50%);
+    width: 500px;
+    height: 500px;
+}
+
+#start {
+    border: solid white 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    opacity: 1;
+    width: 125px;
+    height: 50px;
+}
+
+@keyframes light {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
